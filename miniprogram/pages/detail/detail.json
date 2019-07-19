@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-icon": "vant-weapp/icon",
+    "van-rate": "vant-weapp/rate"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "银行补习班",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

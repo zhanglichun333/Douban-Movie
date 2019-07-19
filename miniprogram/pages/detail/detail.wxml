@@ -1,0 +1,43 @@
+<view>
+  <view class='detail-container' style='background: url({{detail.images.large}}) no-repeat  top/cover'></view>
+  <view class='detail-mask'></view>
+  <view class='detail-info'>
+    <image src="{{detail.images.large}}" class='detail-img'></image>
+    <view class='detail'>
+      <view class="detail-title">{{detail.title}}（{{detail.year}}）</view>
+      <view>类型：{{detail.genres}}</view>
+      <view>导游：
+        <text wx:for="{{detail.directors}}" wx:key="{{item.index}}">{{item.name}} </text>
+      </view>
+      <view class="casts">演员：
+        <text wx:for="{{detail.casts}}" wx:key="{{item.index}}">{{item.name}} </text>
+      </view>
+      <view>片长：{{detail.durations}}</view>
+      <view class="detial-like"><van-icon name="like" color="#FFD21E"/> 想看</view>
+      <view class="detail-look"><van-icon name="star"  color="#FFD21E"/> 看过</view>
+    </view>
+  </view>
+  <view class="detail-other">
+    <view class="summary">
+      <view class="summary1">简介</view>
+      <view class="{{textFlag==true?'text':'textMore'}}">{{detail.summary}}</view>
+      <view class="unfold" bindtap="changeText">{{textFlag==true?'展开':'收起'}}</view>
+    </view>
+    <view class="video">
+      <view>预告片</view>
+      <view wx:for="{{detail.trailers}}" wx:key="{{item.id}}">
+        <video src="{{item.resource_url}}" controls ></video>
+      </view>
+    </view>
+    <view class="comments">
+      <view class="short">短评</view>
+      <view wx:for="{{comments}}" wx:key="{{item}}" class="comment">
+        <image src="{{item.avatar}}"></image>
+        <view class="comment-name">{{item.name}}</view>
+        <van-rate size="8" value="{{ item.star }}"/>
+        <view class="comment-time">{{item.time}}</view>
+        <view  class="{{index===id?'contentMore':'content'}}" bindtap="changeComment" data-index="{{index}}">{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+</view>

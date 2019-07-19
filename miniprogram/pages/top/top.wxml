@@ -1,0 +1,10 @@
+<view class="hit">
+  <view wx:for="{{top}}" wx:key="{{item.id}}" class="hit-info" bindtap="detail" data-movieid="{{item.id}}">
+      <image class="hit-img" src="{{item.images.small}}"></image>
+      <view class="hit-title1">{{item.title}}</view>
+      <view class="hit-rate">
+        <van-rate size="10" value="{{item.rating.stars/10}}"/>
+        <text class="hit-rating">{{ item.rating.average }}</text>
+      </view>
+    </view>
+</view>

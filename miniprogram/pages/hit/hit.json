@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-rate": "vant-weapp/rate"
+  },
+  "navigationBarBackgroundColor": "#15B08C",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "影院热映",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

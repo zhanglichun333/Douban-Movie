@@ -1,0 +1,49 @@
+<view class="hit">
+  <view class="hit-title">
+    <text>影院热映</text>
+    <text bindtap="hitmore" class="more">查看更多></text>
+  </view>
+  <view class="hit-detail">
+    <view wx:for="{{hit}}" wx:key="{{item.id}}" class="hit-info" bindtap="detail" data-movieid="{{item.id}}">
+      <image class="hit-img" src="{{item.images.small}}"></image>
+      <view class="hit-title1">{{item.title}}</view>
+      <view class="hit-rate">
+        <van-rate size="10" value="{{item.rating.stars/10}}"/>
+        <text class="hit-rating">{{ item.rating.average }}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="hit">
+  <view class="hit-title">
+    <text>新片排行榜</text>
+    <text bindtap="newmore" class="more">查看更多></text>
+  </view>
+  <view class="hit-detail">
+    <view wx:for="{{new}}" wx:key="{{item.id}}" class="hit-info" bindtap="detail" data-movieid="{{item.id}}">
+      <image class="hit-img" src="{{item.images.small}}"></image>
+      <view class="hit-title1">{{item.title}}</view>
+      <view class="hit-rate">
+        <van-rate size="10" value="{{item.rating.stars/10}}"/>
+        <text class="hit-rating">{{ item.rating.average }}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="hit">
+  <view class="hit-title">
+    <text>Top250</text>
+    <text bindtap="topmore" class="more">查看更多></text>
+  </view>
+  <view class="hit-detail">
+    <view wx:for="{{top}}" wx:key="{{item.id}}" class="hit-info" bindtap="detail" data-movieid="{{item.id}}">
+      <image class="hit-img" src="{{item.images.small}}"></image>
+      <view class="hit-title1">{{item.title}}</view>
+      <view class="hit-rate">
+        <van-rate size="10" value="{{item.rating.stars/10}}"/>
+        <text class="hit-rating">{{ item.rating.average }}</text>
+      </view>
+    </view>
+  </view>
+</view>
+

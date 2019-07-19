@@ -1,0 +1,49 @@
+.hit-title{
+  padding: 20rpx;
+  position: relative;
+}
+.hit-title text:first-child{
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.more{
+  font-size: 30rpx;
+  color: #15B08C;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+}
+.hit-detail {
+  padding-left: 20rpx;
+  display: flex;
+  overflow-x:scroll;
+}
+.hit-info {
+  padding-right: 20rpx;
+  flex-direction: row;
+}
+.hit-img{
+  width: 170rpx;
+  height: 230rpx;
+  border-radius: 10rpx;
+}
+.hit-title1{
+  font-size: 24rpx;
+  font-weight: 700;
+  width: 170rpx;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.hit-rate{
+  position: relative;
+}
+.van-rate__item{
+  padding: 0 1px!important;
+}
+.hit-rating {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  font-size: 20rpx;
+}

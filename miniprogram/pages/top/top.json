@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-rate": "vant-weapp/rate"
+  },
+  "navigationBarBackgroundColor": "#15B08C",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "Top250",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}
