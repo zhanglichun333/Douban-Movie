@@ -24,12 +24,12 @@ Page({
     })
   },
   like: function (event) {
-    wx.navigateTo({
+    wx.redirectTo({
       url: `../like/like?movieid=${this.data.movieid}`,
     })
   },
   see: function (event) {
-    wx.navigateTo({
+    wx.redirectTo({
       url: `../see/see?movieid=${this.data.movieid}`,
     })
   },

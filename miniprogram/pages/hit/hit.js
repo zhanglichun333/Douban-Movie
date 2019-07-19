@@ -23,7 +23,7 @@ Page({
     })
   },
   detail: function (event) {
-    wx.navigateTo({
+    wx.redirectTo({
       url: `../detail/detail?movieid=${event.currentTarget.dataset.movieid}`,
     })
   },

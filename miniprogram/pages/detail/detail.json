@@ -7,5 +7,6 @@
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "",
   "backgroundColor": "#eeeeee",
-  "backgroundTextStyle": "light"
+  "backgroundTextStyle": "light",
+  "disableSwipeBack": true
 }

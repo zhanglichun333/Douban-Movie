@@ -30,7 +30,7 @@ Page({
       wx.showToast({
         title: '评论成功'
       })
-      wx.navigateTo({
+      wx.redirectTo({
         url: `../detail/detail?movieid=${this.data.movieid}`,
       })
     }).catch(err => {
