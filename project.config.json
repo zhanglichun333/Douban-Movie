@@ -41,7 +41,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 12,
 			"list": [
 				{
 					"id": -1,
@@ -110,6 +110,26 @@
 					"name": "pages/detail/detail",
 					"pathName": "pages/detail/detail",
 					"query": "movieid= 1291546",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/profile/profile",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/see/see",
+					"pathName": "pages/see/see",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/like/like",
+					"pathName": "pages/like/like",
 					"scene": null
 				}
 			]

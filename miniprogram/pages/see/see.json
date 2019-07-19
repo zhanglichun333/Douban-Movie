@@ -1,8 +1,10 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "van-rate": "vant-weapp//rate"
+  },
   "navigationBarBackgroundColor": "white",
   "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "我的",
+  "navigationBarTitleText": "看过",
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light"
 }

@@ -13,8 +13,8 @@
         <text wx:for="{{detail.casts}}" wx:key="{{item.index}}">{{item.name}} </text>
       </view>
       <view>片长：{{detail.durations}}</view>
-      <view class="detial-like"><van-icon name="like" color="#FFD21E"/> 想看</view>
-      <view class="detail-look"><van-icon name="star"  color="#FFD21E"/> 看过</view>
+      <view  class="detial-like" bindtap="like" ><van-icon name="like" color="#FFD21E"/> 想看</view>
+      <view  class="detail-look" bindtap="see" ><van-icon name="star"  color="#FFD21E" /> 看过</view>
     </view>
   </view>
   <view class="detail-other">
@@ -23,10 +23,12 @@
       <view class="{{textFlag==true?'text':'textMore'}}">{{detail.summary}}</view>
       <view class="unfold" bindtap="changeText">{{textFlag==true?'展开':'收起'}}</view>
     </view>
-    <view class="video">
-      <view>预告片</view>
-      <view wx:for="{{detail.trailers}}" wx:key="{{item.id}}">
-        <video src="{{item.resource_url}}" controls ></video>
+    <view class="photos">
+      <view class="photos-title">剧照</view>
+      <view class="photos-info">
+        <view class="photos-detail" wx:for="{{detail.photos}}" wx:key="{{item.id}}" >
+          <image src="{{item.image}}" class="photos-img"></image>
+        </view>
       </view>
     </view>
     <view class="comments">

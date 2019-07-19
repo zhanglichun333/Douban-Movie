@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    movieid: '',
     detail: {},
     reviews: [],
     comments: [],
@@ -22,6 +23,16 @@ Page({
       id: event.target.dataset.index
     })
   },
+  like: function (event) {
+    wx.navigateTo({
+      url: `../like/like?movieid=${this.data.movieid}`,
+    })
+  },
+  see: function (event) {
+    wx.navigateTo({
+      url: `../see/see?movieid=${this.data.movieid}`,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -34,7 +45,11 @@ Page({
       }
     }).then(res => {
       this.setData({
-        detail: JSON.parse(res.result)
+        detail: JSON.parse(res.result),
+        movieid: options.movieid
+      })
+      wx.setNavigationBarTitle({
+        title: this.data.detail.title
       })
     }).catch(err => {
       console.error(err)
@@ -55,7 +70,6 @@ Page({
           praise: item.useful_count
         }))
       })
-      console.log(this.data.comments)
     }).catch(err => {
       console.error(err)
     })

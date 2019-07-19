@@ -1,0 +1,4 @@
+<view class="see">
+  <textarea placeholder="记录想看的理由..." class="text" bindinput="changeContext" auto-focus placeholder-class="text1"/>
+  <button size="default" type="primary" bindtap="submit">提交</button>
+</view>

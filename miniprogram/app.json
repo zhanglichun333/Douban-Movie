@@ -5,13 +5,15 @@
     "pages/hit/hit",
     "pages/new/new",
     "pages/top/top",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/like/like",
+    "pages/see/see"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#15B08C",
-    "navigationBarTitleText": "首页",
+    "navigationBarTitleText": "电影",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

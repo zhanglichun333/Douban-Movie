@@ -1,0 +1,6 @@
+<view class="see">
+  <view class="rate">点击星星评分</view>
+  <van-rate class="star" value="{{ value }}" bind:change="onChange" size="24" />
+  <textarea placeholder="写几句评论吧..." class="text" bindinput="changeContext" auto-focus placeholder-class="text1"/>
+  <button size="default" type="primary" bindtap="submit">提交</button>
+</view>
